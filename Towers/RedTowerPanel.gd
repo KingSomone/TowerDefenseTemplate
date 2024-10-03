@@ -13,7 +13,8 @@ func _on_gui_input(event:InputEvent):
 		tempTower.process_mode = Node.PROCESS_MODE_DISABLED
 		
 		tempTower.scale = Vector2(0.32,0.32)
-		
+
+
 	elif event is InputEventMouseMotion and event.button_mask == 1:
 		#Left Click Drag
 		get_child(1).global_position = event.global_position
