@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://df048mvai6c28"]
+[gd_scene load_steps=6 format=3 uid="uid://cfhdtsc3x8hhc"]
 
-[ext_resource type="Script" path="res://Towers/red_bullet_tower.gd" id="1_b4bln"]
+[ext_resource type="Script" path="res://Towers/DartMonkey.gd" id="1_kpj3a"]
 [ext_resource type="Texture2D" uid="uid://bq43vno681yhf" path="res://PNG/dartmonkey-removebg-preview.png" id="2_nwc5b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ng0qo"]
@@ -17,7 +17,7 @@ corner_radius_bottom_right = 450
 corner_radius_bottom_left = 450
 
 [node name="Dart Monkey" type="StaticBody2D"]
-script = ExtResource("1_b4bln")
+script = ExtResource("1_kpj3a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)

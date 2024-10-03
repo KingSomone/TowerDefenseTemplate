@@ -1,7 +1,7 @@
 extends Panel
 
 
-@onready var tower = preload("res://Towers/DartMonkey.tscn")
+@onready var tower = preload("res://Towers/dartling_gunner.tscn")
 var currTile
 
 func _on_gui_input(event:InputEvent):

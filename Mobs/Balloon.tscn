@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://ddjenjbpreps8"]
+[gd_scene load_steps=4 format=3 uid="uid://drwbealcki1o8"]
 
+[ext_resource type="Script" path="res://Mobs/Balloon.gd" id="1_o2snh"]
 [ext_resource type="Texture2D" uid="uid://be0lajyscue7p" path="res://PNG/redbloon-removebg-preview.png" id="2_kmssu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ktt74"]
 radius = 16.0312
 
 [node name="RedBalloon" type="CharacterBody2D"]
+script = ExtResource("1_o2snh")
 
 [node name="Redbloon-removebg-preview" type="Sprite2D" parent="."]
 position = Vector2(0, -1.90735e-06)

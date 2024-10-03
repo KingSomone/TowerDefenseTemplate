@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://df048mvai6c28"]
+[gd_scene load_steps=6 format=3 uid="uid://bj6pt0ydbm1ra"]
 
-[ext_resource type="Script" path="res://Towers/red_bullet_tower.gd" id="1_b4bln"]
-[ext_resource type="Texture2D" uid="uid://bq43vno681yhf" path="res://PNG/dartmonkey-removebg-preview.png" id="2_nwc5b"]
+[ext_resource type="Script" path="res://Towers/dartling_gunner.gd" id="1_vb5y7"]
+[ext_resource type="Texture2D" uid="uid://4lp2cumassom" path="res://PNG/dartlinggunner-removebg-preview (1).png" id="2_djtda"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ng0qo"]
 size = Vector2(107, 91)
@@ -16,8 +16,9 @@ corner_radius_top_right = 450
 corner_radius_bottom_right = 450
 corner_radius_bottom_left = 450
 
-[node name="Dart Monkey" type="StaticBody2D"]
-script = ExtResource("1_b4bln")
+[node name="DartlingGunner" type="StaticBody2D"]
+script = ExtResource("1_vb5y7")
+bulletDamage = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)
@@ -26,10 +27,10 @@ shape = SubResource("RectangleShape2D_ng0qo")
 [node name="Aim" type="Marker2D" parent="."]
 position = Vector2(67, 0)
 
-[node name="Dartmonkey-removebg-preview" type="Sprite2D" parent="."]
-position = Vector2(-5.36442e-06, 2.38419e-06)
-scale = Vector2(0.693333, 0.551111)
-texture = ExtResource("2_nwc5b")
+[node name="Dartlinggunner-removebg-preview(1)" type="Sprite2D" parent="."]
+position = Vector2(0.499998, 0.5)
+scale = Vector2(0.488789, 0.402655)
+texture = ExtResource("2_djtda")
 
 [node name="Tower" type="Area2D" parent="."]
 
@@ -39,7 +40,7 @@ shape = SubResource("CircleShape2D_ixg8q")
 [node name="BulletContainer" type="Node" parent="."]
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 2.0
+wait_time = 0.75
 autostart = true
 
 [node name="Area" type="Panel" parent="."]

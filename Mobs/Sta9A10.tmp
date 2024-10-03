@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://clxdvexj4mdb0"]
 
-[ext_resource type="PackedScene" uid="uid://drwbealcki1o8" path="res://Mobs/Balloon.tscn" id="1_lcqds"]
+[ext_resource type="PackedScene" uid="uid://drwbealcki1o8" path="res://Mobs/soldierA.tscn" id="1_g8jtm"]
 [ext_resource type="PackedScene" uid="uid://vm511c2lctah" path="res://Mobs/camo_balloon.tscn" id="2_5bcws"]
 [ext_resource type="PackedScene" uid="uid://e5lperml6cxv" path="res://Mobs/rainbow_balloon.tscn" id="3_inqu2"]
 
@@ -18,25 +18,18 @@ curve = SubResource("Curve2D_2l6gg")
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
 position = Vector2(-576, -162)
 rotation = -0.00231317
-rotates = false
 loop = false
 
-[node name="RedBalloon" parent="PathFollow2D" instance=ExtResource("1_lcqds")]
-position = Vector2(-0.000229448, -0.0589905)
-rotation = 0.00231317
+[node name="SoldierA" parent="PathFollow2D" instance=ExtResource("1_g8jtm")]
+position = Vector2(1.61654e-06, -4.64916e-06)
+rotation = -0.00305343
 
-[node name="PathFollow2D2" type="PathFollow2D" parent="."]
-position = Vector2(-576, -162)
-rotation = -0.00231317
-rotates = false
-loop = false
+[node name="CamoBalloon" parent="PathFollow2D/SoldierA" instance=ExtResource("2_5bcws")]
+position = Vector2(-1.60933e-06, 0)
+rotation = 0.00305343
+scale = Vector2(1, 1)
 
-[node name="CamoBalloon" parent="PathFollow2D2" instance=ExtResource("2_5bcws")]
-
-[node name="PathFollow2D3" type="PathFollow2D" parent="."]
-position = Vector2(-576, -162)
-rotation = -0.00231317
-rotates = false
-loop = false
-
-[node name="RainbowBalloon" parent="PathFollow2D3" instance=ExtResource("3_inqu2")]
+[node name="RainbowBalloon" parent="PathFollow2D/SoldierA" instance=ExtResource("3_inqu2")]
+position = Vector2(-1.60933e-06, 0)
+rotation = 0.00305343
+scale = Vector2(1, 1)

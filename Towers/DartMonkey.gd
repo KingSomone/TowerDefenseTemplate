@@ -1,8 +1,8 @@
 extends StaticBody2D
-
+class_name DartMonkey
 
 var Bullet = preload("res://Towers/red_bullet.tscn")
-var bulletDamage = 5
+@export var bulletDamage = 5
 var pathName
 var currTargets = []
 var curr
@@ -20,7 +20,8 @@ func _on_timer_timeout():
 		currTargets = get_node("Tower").get_overlapping_bodies()
 
 		for i in currTargets:
-			if "Soldier" in i.name:
+			print(i.name)
+			if "Balloon" in i.name:
 				tempArray.append(i)
 
 		var currTarget = null

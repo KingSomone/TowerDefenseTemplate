@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://fa0leghiym1w"]
+
+[ext_resource type="Script" path="res://Towers/dart_hero_panel.gd" id="1_s4bgq"]
+[ext_resource type="Texture2D" uid="uid://dftm0w6rtyapb" path="res://snipermonkey-removebg-preview (2).png" id="2_084fl"]
+
+[node name="DartHeroPanel" type="Panel"]
+custom_minimum_size = Vector2(80, 80)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_s4bgq")
+
+[node name="Snipermonkey-removebg-preview(2)" type="Sprite2D" parent="."]
+position = Vector2(41, 39.5)
+scale = Vector2(0.355556, 0.36)
+texture = ExtResource("2_084fl")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

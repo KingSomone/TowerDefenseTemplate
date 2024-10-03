@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dmgp83mcc2xyl"]
 
 [ext_resource type="Script" path="res://Towers/red_bullet.gd" id="1_0jncf"]
-[ext_resource type="Texture2D" uid="uid://dyeavc66rx6jp" path="res://PNG/Default size/towerDefense_tile251.png" id="1_7oh4w"]
+[ext_resource type="Texture2D" uid="uid://b3p35d602x0hp" path="res://PNG/dart-removebg-preview.png" id="2_lcvey"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wvocf"]
 
@@ -9,12 +9,14 @@
 radius = 14.0
 height = 38.0
 
-[node name="RedBullet" type="CharacterBody2D"]
+[node name="Dart" type="CharacterBody2D"]
+collision_mask = 2
 script = ExtResource("1_0jncf")
 
-[node name="TowerDefenseTile251" type="Sprite2D" parent="."]
-rotation = 1.5708
-texture = ExtResource("1_7oh4w")
+[node name="Dart-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(-2.38419e-07, 2.38419e-07)
+scale = Vector2(0.0990566, 0.0917721)
+texture = ExtResource("2_lcvey")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708

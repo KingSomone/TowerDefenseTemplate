@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://vm511c2lctah"]
+
+[ext_resource type="Texture2D" uid="uid://7glrjfabkntj" path="res://PNG/camobloon.webp" id="1_nvm3u"]
+[ext_resource type="Script" path="res://Mobs/camo_balloon.gd" id="1_r0j7r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pvin5"]
+radius = 16.0
+
+[node name="CamoBalloon" type="CharacterBody2D"]
+script = ExtResource("1_r0j7r")
+speed = 325
+Health = 5
+
+[node name="Camobloon" type="Sprite2D" parent="."]
+position = Vector2(2.38419e-07, -3.57628e-07)
+scale = Vector2(0.176683, 0.157812)
+texture = ExtResource("1_nvm3u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_pvin5")

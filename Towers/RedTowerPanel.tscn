@@ -1,17 +1,17 @@
 [gd_scene load_steps=3 format=3 uid="uid://bp750gw3vp2uv"]
 
 [ext_resource type="Script" path="res://Towers/RedTowerPanel.gd" id="1_c7y63"]
-[ext_resource type="Texture2D" uid="uid://bgd36jff4e2qy" path="res://PNG/Default size/towerDefense_tile250.png" id="1_d1d2n"]
+[ext_resource type="Texture2D" uid="uid://bq43vno681yhf" path="res://PNG/dartmonkey-removebg-preview.png" id="2_328r2"]
 
-[node name="RedTowerPanel" type="Panel"]
+[node name="DartMonkeyPanel" type="Panel"]
 custom_minimum_size = Vector2(80, 80)
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_c7y63")
 
-[node name="TowerDefenseTile250" type="Sprite2D" parent="."]
-position = Vector2(40.5, 40)
-scale = Vector2(1.26563, 1.25)
-texture = ExtResource("1_d1d2n")
+[node name="Dartmonkey-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(40, 40)
+scale = Vector2(0.355556, 0.355556)
+texture = ExtResource("2_328r2")
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
